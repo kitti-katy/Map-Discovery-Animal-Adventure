@@ -1,0 +1,97 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kittikaty.kate.travelopener.Settings">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standard_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_disableBackground"
+                android:textColor="?attr/colorPrimaryDark"
+                android:textSize="@dimen/settings_size_text"
+                android:layout_weight="9" />
+
+            <ToggleButton
+                android:text="ToggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggleButton"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorAccent"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/settings_size_text"
+                android:minHeight="0dp"
+                android:minWidth="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standard_margin">
+
+            <TextView
+                android:text="@string/settings_Check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView11"
+                android:layout_weight="6"
+                android:textColor="?attr/colorPrimaryDark"
+                android:textSize="@dimen/settings_size_text" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorAccent">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner"
+                    android:backgroundTint="@color/colorAccent"
+                    android:gravity="bottom|end"
+                    android:textAlignment="viewEnd" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:text="@string/help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/help"
+            android:textColor="?attr/colorAccent"
+            android:textSize="@dimen/settings_size_help_disclaimer"
+            android:textStyle="normal|italic"
+            android:layout_margin="@dimen/standard_margin" />
+
+        <TextView
+            android:text="@string/disclaimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/disclaimer"
+            android:textColor="?attr/colorAccent"
+            android:textSize="@dimen/settings_size_help_disclaimer"
+            android:textStyle="normal|italic"
+            android:layout_margin="@dimen/standard_margin" />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,128 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context="com.kittikaty.kate.travelopener.MapViewFragment"
+    android:id="@+id/fl">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.google.android.gms.maps.MapView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mapView" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/moneybag"
+                android:id="@+id/imageView7"
+                android:layout_weight="0.1" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/money_indicator"
+                android:layout_weight="1"
+                android:textSize="@dimen/coins_animals_count"
+                android:textColor="@color/colorBackground"
+                android:textColorHighlight="?attr/colorPrimaryDark"
+                android:shadowColor="@android:color/black"
+                android:shadowRadius="5"
+                android:soundEffectsEnabled="false"
+                android:gravity="bottom" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/animals_indicator"
+                android:layout_weight="1"
+                android:textAlignment="viewEnd"
+                android:textSize="@dimen/coins_animals_count"
+                android:textColor="@color/colorBackground"
+                android:textColorHighlight="?attr/colorPrimaryDark"
+                android:shadowColor="@android:color/black"
+                android:shadowRadius="5"
+                android:soundEffectsEnabled="false"
+                android:gravity="bottom" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/sheep"
+                android:id="@+id/imageView8"
+                android:layout_weight="0.1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/money_pic"
+                android:layout_weight="1"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView14"
+                android:layout_weight="2" />
+
+            <ImageView
+                android:id="@+id/tt"
+                android:baselineAlignBottom="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="1"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.gms.ads.AdView
+
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/adId"
+            android:elevation="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/homeButton"
+            android:layout_width="@dimen/achivements_icon_width2"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/adView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="17dp"
+            android:layout_marginEnd="14dp"
+            app:srcCompat="@mipmap/gohome" />
+
+    </RelativeLayout>
+
+</FrameLayout>

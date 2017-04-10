@@ -1,0 +1,1211 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kittikaty.kate.travelopener.AchievementsFragment"
+    android:background="@color/mapGroundColor"
+    android:id="@+id/achievementsFrame">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/achivement_locked"
+                android:layout_margin="@dimen/achievement_margin"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Next Level 6:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Levelndicator"
+                        android:textColor="@color/colorBackground"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/achievements_title"
+                        android:layout_margin="@dimen/achievement_margin"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:layout_weight="0.09">
+
+                    <ImageView
+                        android:layout_width="@dimen/achivements_icon_width"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@mipmap/moneybag"
+                        android:id="@+id/imageView" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorAccentTransparent"
+                        android:layout_margin="10dp"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:text="@string/coins_collected"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView9"
+                                android:textColor="@color/colorBackground"
+                                android:textSize="@dimen/settings_size_text"
+                                android:layout_margin="5dp"
+                                android:layout_weight="0.5"
+                                android:layout_marginLeft="10dp" />
+
+                            <TextView
+                                android:text="8/10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/coinsIndicator"
+                                android:layout_weight="1"
+                                android:textColor="@color/colorBackground"
+                                android:textAlignment="textEnd"
+                                android:paddingRight="10dp"
+                                android:textSize="@dimen/settings_size_help_disclaimer" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.48">
+
+                            <ProgressBar
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/pb_coins"
+                                android:layout_weight="1"
+                                android:paddingLeft="@dimen/achievement_margin"
+                                android:paddingRight="@dimen/achievement_margin"
+                                android:paddingBottom="@dimen/achievement_margin" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:layout_weight="0.09">
+
+                    <ImageView
+                        android:layout_width="@dimen/achivements_icon_width"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@mipmap/sheep"
+                        android:id="@+id/imageView22" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorAccentTransparent"
+                        android:layout_margin="10dp"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.48">
+
+                            <TextView
+                                android:text="@string/animals_collected"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView91"
+                                android:textColor="@color/colorBackground"
+                                android:textSize="@dimen/settings_size_text"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="10dp" />
+
+                            <TextView
+                                android:text="8/10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/coins5Indicator"
+                                android:layout_weight="1"
+                                android:textColor="@color/colorBackground"
+                                android:textAlignment="textEnd"
+                                android:layout_marginRight="10dp"
+                                android:textSize="@dimen/settings_size_help_disclaimer" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.48">
+
+                            <ProgressBar
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/pb_animals"
+                                android:layout_weight="1"
+                                android:paddingLeft="@dimen/achievement_margin"
+                                android:paddingRight="@dimen/achievement_margin"
+                                android:paddingBottom="@dimen/achievement_margin" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:layout_weight="0.09">
+
+                    <ImageView
+                        android:layout_width="@dimen/achivements_icon_width"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/total_area_svg"
+                        android:id="@+id/imageView11" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorAccentTransparent"
+                        android:layout_margin="10dp"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:text="@string/area_opened"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView934"
+                                android:textColor="@color/colorBackground"
+                                android:textSize="@dimen/settings_size_text"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="10dp" />
+
+                            <TextView
+                                android:text="8/10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/areaIndicator"
+                                android:layout_weight="1"
+                                android:textColor="@color/colorBackground"
+                                android:textAlignment="textEnd"
+                                android:layout_marginRight="10dp"
+                                android:textSize="@dimen/settings_size_help_disclaimer" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.48">
+
+                            <ProgressBar
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/pb_area"
+                                android:layout_weight="1"
+                                android:paddingLeft="@dimen/achievement_margin"
+                                android:paddingRight="@dimen/achievement_margin"
+                                android:paddingBottom="@dimen/achievement_margin" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/achievement_margin"
+                android:background="@color/achivement_locked"
+                android:padding="10dp">
+
+                <TextView
+                    android:text="@string/au"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView10"
+                    android:textSize="@dimen/achievements_title"
+                    android:textColor="@color/colorBackground"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/achievement_margin" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/sheep"
+                        android:id="@+id/a0"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/cow"
+                        android:id="@+id/a1"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/ymilkcow"
+                        android:id="@+id/a2"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/pig"
+                        android:id="@+id/a3"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zpig"
+                        android:id="@+id/a4"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zgoat"
+                        android:id="@+id/a5"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zgoat2"
+                        android:id="@+id/a6"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/horse"
+                        android:id="@+id/a7"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zdonkey"
+                        android:id="@+id/a8"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/canard"
+                        android:id="@+id/a9"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/pten"
+                        android:id="@+id/a10"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zchiken1"
+                        android:id="@+id/a11"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zchicken2"
+                        android:id="@+id/a12"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zrooster"
+                        android:id="@+id/a13"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zduck"
+                        android:id="@+id/a14"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zgoose"
+                        android:id="@+id/a15"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zmalllard"
+                        android:id="@+id/a16"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zswan"
+                        android:id="@+id/a17"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zostrich"
+                        android:id="@+id/a18"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zpeacock"
+                        android:id="@+id/a19"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zturkey"
+                        android:id="@+id/a20"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zturkey2"
+                        android:id="@+id/a21"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/browncat"
+                        android:id="@+id/a22"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/cat"
+                        android:id="@+id/a23"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/leopard"
+                        android:id="@+id/a24"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zcat2"
+                        android:id="@+id/a25"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zcat3"
+                        android:id="@+id/a26"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zcat4"
+                        android:id="@+id/a27"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zjaguar"
+                        android:id="@+id/a28"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zcat5"
+                        android:id="@+id/a29"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/tiger"
+                        android:id="@+id/a30"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zlion"
+                        android:id="@+id/a31"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/dog"
+                        android:id="@+id/a32"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zdog1"
+                        android:id="@+id/a33"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zdog2"
+                        android:id="@+id/a34"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zdog4"
+                        android:id="@+id/a35"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zrat1"
+                        android:id="@+id/a36"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zrat2"
+                        android:id="@+id/a37"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zrat3"
+                        android:id="@+id/a38"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/asia"
+                        android:id="@+id/a39"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/bull"
+                        android:id="@+id/a40"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/ykt"
+                        android:id="@+id/a41"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/chamois"
+                        android:id="@+id/a42"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/deer"
+                        android:id="@+id/a43"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/elk"
+                        android:id="@+id/a44"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zebra"
+                        android:id="@+id/a45"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zlamb"
+                        android:id="@+id/a46"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zlama"
+                        android:id="@+id/a47"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/bear"
+                        android:id="@+id/a48"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/whitebear"
+                        android:id="@+id/a49"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zpanda"
+                        android:id="@+id/a50"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zpolarbear"
+                        android:id="@+id/a51"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zwolf1"
+                        android:id="@+id/a52"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zwolf2"
+                        android:id="@+id/a53"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/snail"
+                        android:id="@+id/a54"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zsnailtwo"
+                        android:id="@+id/a55"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/enot"
+                        android:id="@+id/a56"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zhedgehog"
+                        android:id="@+id/a57"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zbunny"
+                        android:id="@+id/a58"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/squirrel"
+                        android:id="@+id/a59"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/greysquirrel"
+                        android:id="@+id/a60"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/ybober"
+                        android:id="@+id/a61"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/monkey"
+                        android:id="@+id/a62"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/kangaroo"
+                        android:id="@+id/a63"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zgiraffe1"
+                        android:id="@+id/a64"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zgiraffe2"
+                        android:id="@+id/a65"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/elephant"
+                        android:id="@+id/a66"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zelephant1"
+                        android:id="@+id/a67"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zelephant2"
+                        android:id="@+id/a68"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zjug"
+                        android:id="@+id/a69"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/hippo"
+                        android:id="@+id/a70"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zhippo"
+                        android:id="@+id/a71"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zrhino"
+                        android:id="@+id/a72"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/tusk"
+                        android:id="@+id/a73"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zseal"
+                        android:id="@+id/a74"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zfrog"
+                        android:id="@+id/a75"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/ycrocodile"
+                        android:id="@+id/a76"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/turtle"
+                        android:id="@+id/a77"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/yturtle"
+                        android:id="@+id/a78"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zsnake1"
+                        android:id="@+id/a79"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zsnake2"
+                        android:id="@+id/a80"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zspider"
+                        android:id="@+id/a81"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zdeno6"
+                        android:id="@+id/a82"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zdino1"
+                        android:id="@+id/a83"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zdino5"
+                        android:id="@+id/a84"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zdino2"
+                        android:id="@+id/a85"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zdino3"
+                        android:id="@+id/a86"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zdino4"
+                        android:id="@+id/a87"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/zdino7"
+                        android:id="@+id/a88"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/a89"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/achievement_margin"
+                android:background="@color/achivement_locked"
+                android:padding="5dp">
+
+                <TextView
+                    android:text="@string/bu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView101"
+                    android:textSize="@dimen/achievements_title"
+                    android:textColor="@color/colorBackground"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/achievement_margin" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/owlfamily"
+                        android:id="@+id/ba0"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/stuffedanimal"
+                        android:id="@+id/ba1"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/teddybear"
+                        android:id="@+id/ba2"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/whale"
+                        android:id="@+id/ba3"
+                        android:layout_weight="1"
+                        android:tint="@color/cast_expanded_controller_background_color" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

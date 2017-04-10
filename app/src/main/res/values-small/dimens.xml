@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="title_size">16sp</dimen>
+    <dimen name="settings_size_help_disclaimer">10sp</dimen>
+    <dimen name="settings_size_text">12sp</dimen>
+
+    <dimen name="standard_margin">3dp</dimen>
+
+    <dimen name="coins_animals_count">14sp</dimen>
+    <dimen name="achievements_title">18sp</dimen>
+    <dimen name="achivements_icon_width">42dp</dimen>
+    <dimen name="achivements_icon_width2">72dp</dimen>
+
+    <dimen name="achievement_margin">6dp</dimen>
+    <dimen name="button_size">20dp</dimen>
+</resources>

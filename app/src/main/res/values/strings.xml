@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Map Discovery Animal Adventure</string>
+    <string name="title_activity_main_map">Map</string>
+    <string name="name">Name:</string>
+    <string name="email">Email:</string>
+    <string name="password">Password:</string>
+    <string name="confirmPassword">Confirm Password:</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="mymap">Go to Map</string>
+    <string name="myachivements">My Achievements</string>
+    <string name="settings">Settings</string>
+    <string name="bar">bar</string>
+    <string name="ad_id_banner">ca-app-pub-8349081440384386/4843061559</string>
+    <string name="upgrade">Upgade</string>
+    <string name="coins_collected">Coins Collected</string>
+    <string name="area_opened">Area Opened (km²)</string>
+    <string name="animals_collected">Animals Collected</string>
+    <string name="au">Animals Unlocked:</string>
+    <string name="bu">Bonus:</string>
+
+    <string name="settings_disableBackground">Check location in the background</string>
+    <string name="settings_Check">Check location every </string>
+
+    <string name="help">Help </string>
+    <string name="disclaimer">Disclaimer </string>
+
+    <string-array name="time_array">
+        <item>5 seconds</item>
+        <item>10 seconds</item>
+        <item>15 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+
+
+    </string-array>
+
+    <string name="adId">ca-app-pub-8349081440384386/4843061559</string>
+    <string name="watch">Earn 25 coins!</string>
+
+
+</resources>

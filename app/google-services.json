@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "23613852677",
+    "firebase_url": "https://travelopener-df5ab.firebaseio.com",
+    "project_id": "travelopener-df5ab",
+    "storage_bucket": "travelopener-df5ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23613852677:android:8914a8dd6a20a5c6",
+        "android_client_info": {
+          "package_name": "com.example.kate.travelopener"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "23613852677-707on83gdcil4448m20qfgm8mnnl4ibj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr-_CjEkL6p3sd0lhCi63o73Mh9g2ScZU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23613852677:android:b8c64a6d4128ce06",
+        "android_client_info": {
+          "package_name": "com.kittikaty.kate.travelopener"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "23613852677-707on83gdcil4448m20qfgm8mnnl4ibj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr-_CjEkL6p3sd0lhCi63o73Mh9g2ScZU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

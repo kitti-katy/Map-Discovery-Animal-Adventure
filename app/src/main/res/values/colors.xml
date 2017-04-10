@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#153029</color>
+    <color name="colorPrimaryDark">#0e0e0e</color>
+    <color name="colorAccent">#62a586</color>
+    <color name="colorBackground">#F3F8E4</color>
+    <color name="mapGroundColor">#AED79D</color>
+    <color name="transparentCover">#de091813</color>
+    <color name="transparentCoverLess">#32091813</color>
+    <color name="transparentCoverLess1">#af091813</color>
+    <color name="transparentCoverLess2">#c8091813</color>
+    <color name="transparentCoverLess3">#e1091813</color>
+    <color name="transparentCoverLess4">#eb091813</color>
+    <color name="transparentCoverLess5">#f0091813</color>
+    <color name="mapGroundColorTransparent">#f0aed79d</color>
+    <color name="colorAccentTransparent">#0a62a586</color>
+
+    <color name="colorBackgroundTransparent1">#c8f3f8e4</color>
+    <color name="pinkColorPrimary">#10071E</color>
+    <color name="colorPrimaryDarkPink">#10071E</color>
+    <color name="colorAccentPink">#9D5A79</color>
+    <color name="achivement_locked">#2262a586</color>
+    <color name="text_achievement_locked">#8cf3f8e4</color>
+    <color name="backroundBuyCircle"> #ff1a2c22 </color>
+    <color name="redprimary">#340701</color>
+</resources>
